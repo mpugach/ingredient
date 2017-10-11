@@ -1,4 +1,4 @@
-# Ingredient
+# Ingredient [![Build Status](https://travis-ci.org/mpugach/ingredient.svg?branch=master)](https://travis-ci.org/mpugach/ingredient)
 
 Identify file content
 

@@ -1,0 +1,33 @@
+language: elixir
+
+matrix:
+  include:
+    - otp_release: 18.3
+      elixir: 1.4
+    - otp_release: 19.3
+      elixir: 1.4
+    - otp_release: 20.0
+      elixir: 1.4
+    - otp_release: 19.3
+      elixir: 1.5
+    - otp_release: 20.0
+      elixir: 1.5
+    - otp_release: 20.1
+      elixir: 1.5
+
+sudo: false
+
+env:
+  - ELIXIR_ASSERT_TIMEOUT=2000
+
+script:
+  - mix test
+  - mix credo --strict
+
+# after_script:
+#   - cd $TRAVIS_BUILD_DIR
+#   - MIX_ENV=docs mix inch.report
+
+notifications:
+  recipients:
+    - pugach.m@gmail.com

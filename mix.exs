@@ -5,7 +5,7 @@ defmodule Ingredient.Mixfile do
     [
       app: :ingredient,
       version: "0.0.1",
-      elixir: "~> 1.5",
+      elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]
